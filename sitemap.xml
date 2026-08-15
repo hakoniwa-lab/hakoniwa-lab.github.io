@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  サイトマップインデックス。
+  hakoniwa-lab.github.io は「ハブ(このリポジトリ)」+「各アプリ(別リポジトリ)」で
+  1ドメインを構成しているため、各アプリの sitemap.xml をここに集約して
+  Search Console にはこの1本だけを送信する。
+
+  robots.txt はドメインのルートしか読まれないので、各アプリ配下の robots.txt に
+  書いた Sitemap: 行はクローラーに届かない。入口はここに一本化すること。
+
+  アプリを追加したら、このファイルに <sitemap> を1つ追記する。
+-->
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap><loc>https://hakoniwa-lab.github.io/sitemap-hub.xml</loc></sitemap>
+  <sitemap><loc>https://hakoniwa-lab.github.io/subsidy-checker/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://hakoniwa-lab.github.io/sidejob-checker/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://hakoniwa-lab.github.io/career-checker/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://hakoniwa-lab.github.io/insurance-checker/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://hakoniwa-lab.github.io/takehome-calculator/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://hakoniwa-lab.github.io/furusato-simulator/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://hakoniwa-lab.github.io/retirement-simulator/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://hakoniwa-lab.github.io/sidejob-tax-simulator/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://hakoniwa-lab.github.io/resignation-letter-generator/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://hakoniwa-lab.github.io/stock-screener/sitemap.xml</loc></sitemap>
+</sitemapindex>
