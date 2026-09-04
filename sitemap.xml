@@ -11,16 +11,16 @@
   アプリを追加したら、このファイルに <sitemap> を1つ追記する。
 -->
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap><loc>https://hakoniwa-lab.github.io/sitemap-hub.xml</loc></sitemap>
-  <sitemap><loc>https://hakoniwa-lab.github.io/subsidy-checker/sitemap.xml</loc></sitemap>
-  <sitemap><loc>https://hakoniwa-lab.github.io/sidejob-checker/sitemap.xml</loc></sitemap>
-  <sitemap><loc>https://hakoniwa-lab.github.io/career-checker/sitemap.xml</loc></sitemap>
-  <sitemap><loc>https://hakoniwa-lab.github.io/insurance-checker/sitemap.xml</loc></sitemap>
-  <sitemap><loc>https://hakoniwa-lab.github.io/takehome-calculator/sitemap.xml</loc></sitemap>
-  <sitemap><loc>https://hakoniwa-lab.github.io/furusato-simulator/sitemap.xml</loc></sitemap>
-  <sitemap><loc>https://hakoniwa-lab.github.io/retirement-simulator/sitemap.xml</loc></sitemap>
-  <sitemap><loc>https://hakoniwa-lab.github.io/sidejob-tax-simulator/sitemap.xml</loc></sitemap>
-  <sitemap><loc>https://hakoniwa-lab.github.io/resignation-letter-generator/sitemap.xml</loc></sitemap>
-  <sitemap><loc>https://hakoniwa-lab.github.io/stock-screener/sitemap.xml</loc></sitemap>
-  <sitemap><loc>https://hakoniwa-lab.github.io/meguri-log/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://hakoniwalab.com/sitemap-hub.xml</loc></sitemap>
+  <sitemap><loc>https://hakoniwalab.com/subsidy-checker/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://hakoniwalab.com/sidejob-checker/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://hakoniwalab.com/career-checker/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://hakoniwalab.com/insurance-checker/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://hakoniwalab.com/takehome-calculator/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://hakoniwalab.com/furusato-simulator/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://hakoniwalab.com/retirement-simulator/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://hakoniwalab.com/sidejob-tax-simulator/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://hakoniwalab.com/resignation-letter-generator/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://hakoniwalab.com/stock-screener/sitemap.xml</loc></sitemap>
+  <sitemap><loc>https://hakoniwalab.com/meguri-log/sitemap.xml</loc></sitemap>
 </sitemapindex>
