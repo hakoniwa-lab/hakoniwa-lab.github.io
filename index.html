@@ -11,8 +11,8 @@
   gtag('js', new Date());
   gtag('config', 'G-WTBHV5QYG3');
 </script>
-<title>HAKONIWA LAB | 灯家</title>
-<meta name="description" content="灯家が個人開発したアプリ・ツールと、運営実績をまとめたプロジェクトハブです。">
+<title>HAKONIWA LAB | 法要の日程・手取り・退職金がわかる無料ツール集</title>
+<meta name="description" content="命日から法要の日程を出す、額面から手取りを計算する、退職届の文面を作る。暮らしの中の「いつ」「いくら」「どう書く」を、入力するだけで調べられる無料ツールと解説記事をまとめています。会員登録は不要です。">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6465548593525933" crossorigin="anonymous"></script>
 <style>
 :root {
@@ -145,13 +145,30 @@ html, body {
   border: 1.5px solid var(--color-accent);
   padding: 8.5px 16.5px;
 }
-.btn--soon {
-  background: transparent;
-  color: var(--color-text-muted);
-  border: 1.5px dashed var(--color-border);
-  padding: 8.5px 16.5px;
-  cursor: default;
+.purpose {
+  display: grid;
+  gap: 14px;
+  margin: 0;
 }
+.purpose__group {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+}
+.purpose__label {
+  font-size: 0.92rem;
+  font-weight: 800;
+  margin: 0 0 8px;
+}
+.purpose__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  margin: 0;
+  font-size: 0.9rem;
+}
+.purpose__links a { color: var(--color-primary); }
 .footer {
   text-align: center;
   font-size: 0.78rem;
@@ -165,25 +182,73 @@ html, body {
 <div class="page">
 
   <header class="hero">
-    <span class="hero__mark">HAKONIWA LAB</span>
+    <span class="hero__mark">無料・会員登録なし</span>
     <h1 class="hero__title">HAKONIWA LAB</h1>
-    <p class="hero__subtitle">small worlds, built by hand — by 灯家</p>
-    <p class="hero__lead">個人で開発したアプリ・ツールと、これまでの運営実績をまとめたプロジェクトハブです。</p>
+    <p class="hero__subtitle">暮らしの「いつ」「いくら」を、入力するだけで。</p>
+    <p class="hero__lead">法要の日程、手取りや税金、退職の書類、使える給付金。調べようとすると手間のかかることを、条件を入れるとその場で答えが出るツールにしました。それぞれのツールには、結果の読み方や注意点をまとめた解説記事もあります。</p>
   </header>
 
   <section class="section">
-    <h2 class="section__heading">Apps &amp; Tools</h2>
+    <h2 class="section__heading">目的から探す</h2>
+    <div class="purpose">
+      <div class="purpose__group">
+        <p class="purpose__label">家族を見送ったあとに</p>
+        <p class="purpose__links">
+          <a href="./houyou-calendar/">法要日程カレンダー</a>
+          <a href="./houyou-calendar/hayami/">年忌早見表</a>
+          <a href="./houyou-calendar/tetsuzuki/">死亡後の手続きの期限</a>
+          <a href="./houyou-calendar/pet/">ペットの法要</a>
+        </p>
+      </div>
+      <div class="purpose__group">
+        <p class="purpose__label">仕事を辞めるとき・変えるとき</p>
+        <p class="purpose__links">
+          <a href="./resignation-letter-generator/">退職願・退職届を作る</a>
+          <a href="./retirement-simulator/">退職金の手取り</a>
+          <a href="./subsidy-checker/">使える給付金を探す</a>
+          <a href="./career-checker/">転職エージェントを選ぶ</a>
+        </p>
+      </div>
+      <div class="purpose__group">
+        <p class="purpose__label">収入と税金を知りたいとき</p>
+        <p class="purpose__links">
+          <a href="./takehome-calculator/">手取り年収</a>
+          <a href="./furusato-simulator/">ふるさと納税の上限額</a>
+          <a href="./sidejob-tax-simulator/">副業の税金</a>
+          <a href="./sidejob-checker/">向いている副業</a>
+        </p>
+      </div>
+      <div class="purpose__group">
+        <p class="purpose__label">備えと資産</p>
+        <p class="purpose__links">
+          <a href="./insurance-checker/">必要な保険</a>
+          <a href="./retirement-simulator/ideco/">iDeCoの受け取り方</a>
+          <a href="./stock-screener/">株の条件検索</a>
+        </p>
+      </div>
+      <div class="purpose__group">
+        <p class="purpose__label">暦と楽しみ</p>
+        <p class="purpose__links">
+          <a href="./birthday-fortune/">生まれ日診断</a>
+          <a href="./birthday-fortune/calendar/">吉日カレンダー</a>
+          <a href="./meguri-log/">めぐった場所の記録</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section__heading">ツール一覧(新しい順)</h2>
     <div class="card-list">
 
       <article class="card">
         <div class="card__badges">
-          <span class="badge">Webツール</span>
           <span class="badge">法要・暦</span>
         </div>
         <h3 class="card__title">法要日程カレンダー</h3>
-        <p class="card__desc">命日を入れるだけで、初七日・四十九日から一周忌・三回忌・五十回忌までの日付を曜日・六曜・祝日つきで一覧にするWebツール。平日にあたる法要は直前の休日を前倒しの候補に出し、初盆(新盆)の年も判定します。関西の数え方、7月盆・沖縄の旧盆、神式の霊祭にも対応。カレンダー登録と家族への共有も。ペットの四十九日・一周忌と1年目の月命日を出すペット版も。</p>
-        <p class="card__meta">Vanilla HTML/CSS/JS・六曜と旧盆は旧暦を自前計算(旧盆は2019〜2030年の公開日程と全一致)・祝日は内閣府の1,067件と全一致・入力は端末内にのみ保存</p>
-        <a class="btn btn--primary" href="./houyou-calendar/">ツールを見る →</a>
+        <p class="card__desc">命日を入れるだけで、初七日・四十九日から一周忌・三回忌・五十回忌までの日付を、曜日・六曜・祝日つきで一覧にします。平日にあたる法要は直前の休日を前倒しの候補に出し、初盆(新盆)の年も判定します。関西の数え方、7月盆・沖縄の旧盆、神式の霊祭にも対応。カレンダーへの登録や家族への共有もできます。ペットの四十九日・一周忌と1年目の月命日を出すペット版もあります。</p>
+        <p class="card__meta">六曜と旧盆の日付は旧暦から計算し、旧盆は2019〜2030年の公表日程と照合済み。祝日は内閣府の公表データ1,067件と照合済み。入力した命日はお使いの端末の中にだけ保存されます。</p>
+        <a class="btn btn--primary" href="./houyou-calendar/">ツールを使う →</a>
         <a class="btn" href="./houyou-calendar/hayami/">年忌早見表</a>
         <a class="btn" href="./houyou-calendar/pet/">ペット版</a>
         <a class="btn" href="./houyou-calendar/tetsuzuki/">手続きの期限</a>
@@ -191,162 +256,124 @@ html, body {
 
       <article class="card">
         <div class="card__badges">
-          <span class="badge">Webアプリ</span>
           <span class="badge">占い・診断</span>
         </div>
         <h3 class="card__title">生まれ日診断</h3>
-        <p class="card__desc">生年月日を入れるだけで、西洋占星術の出生図・四柱推命の命式・宿曜の本命宿・マヤ暦のKIN・数秘術・九星気学をまとめて表示するWebアプリ。厄年と年祝い、今年の吉方位も出ます。二人の相性診断と、祝日・七十二候つきで一粒万倍日や天赦日を月ごとに見られ、条件で1年先まで日を探せる吉日カレンダーも。</p>
-        <p class="card__meta">Vanilla HTML/CSS/JS・天体位置と二十四節気を自前計算・旧暦とマヤ暦も自前で組み立て・入力は端末内にのみ保存</p>
-        <a class="btn btn--primary" href="./birthday-fortune/">アプリを見る →</a>
+        <p class="card__desc">生年月日を入れるだけで、西洋占星術の出生図・四柱推命の命式・宿曜の本命宿・マヤ暦のKIN・数秘術・九星気学をまとめて表示します。厄年と年祝い、今年の吉方位も出ます。二人の相性診断と、一粒万倍日や天赦日を月ごとに見られて、条件で1年先まで日を探せる吉日カレンダーもあります。</p>
+        <p class="card__meta">天体の位置・二十四節気・旧暦・マヤ暦はサイト内で計算しています。入力した生年月日はお使いの端末の中にだけ保存されます。</p>
+        <a class="btn btn--primary" href="./birthday-fortune/">ツールを使う →</a>
         <a class="btn" href="./birthday-fortune/calendar/">吉日カレンダー</a>
       </article>
 
       <article class="card">
         <div class="card__badges">
-          <span class="badge">Webアプリ</span>
-          <span class="badge">PWA・位置情報</span>
+          <span class="badge">記録・地図</span>
         </div>
         <h3 class="card__title">めぐログ</h3>
-        <p class="card__desc">御朱印・城・駅・山・温泉・市区町村めぐりの記録を1本にまとめるアプリ。行った場所を地図で塗りつぶして制覇率が見え、訪問日ごとに写真・メモ・金額を残せます。ホーム画面に追加すればアプリとして起動し、電波の届かない山の中でも記録できます。</p>
-        <p class="card__meta">Vanilla JS + Leaflet・47都道府県/1,902市区町村のGeoJSONを自前で軽量化・100名城/札所/駅/山/温泉など97リスト約3万か所を同梱・地図から周辺のランドマークも自動検索・オフライン対応</p>
-        <a class="btn btn--primary" href="./meguri-log/">アプリを見る →</a>
+        <p class="card__desc">御朱印・城・駅・山・温泉・市区町村めぐりの記録を1つにまとめるアプリです。行った場所を地図で塗りつぶして制覇率が見え、訪問日ごとに写真・メモ・金額を残せます。ホーム画面に追加すればアプリとして起動し、電波の届かない山の中でも記録できます。</p>
+        <p class="card__meta">100名城・札所・駅・山・温泉など97リスト約3万か所を収録。全国1,902市区町村の地図で塗りつぶせます。地図から周辺の名所を探すこともできます。</p>
+        <a class="btn btn--primary" href="./meguri-log/">アプリを使う →</a>
         <a class="btn" href="./meguri-log/guide/meguri-kiroku-app/">使い方を読む</a>
       </article>
 
       <article class="card">
         <div class="card__badges">
-          <span class="badge">Webツール</span>
-          <span class="badge">株スクリーニング</span>
+          <span class="badge">株・投資</span>
         </div>
         <h3 class="card__title">株スクリーニング条件メーカー</h3>
-        <p class="card__desc">「PERって何？いくつ入れればいいの？」で止まってしまう方向けに、3つの質問に答えるだけで株の条件検索(スクリーニング)にそのまま使える条件を組み立てるWebツール。手取り年収シミュレーターとも連携。</p>
-        <p class="card__meta">Vanilla HTML/CSS/JS・投資系YouTube 439本の集計値を基準値に採用</p>
-        <a class="btn btn--primary" href="./stock-screener/">ツールを見る →</a>
+        <p class="card__desc">「PERって何？いくつ入れればいいの？」で止まってしまう方向けに、3つの質問に答えるだけで、株の条件検索(スクリーニング)にそのまま使える条件を組み立てます。手取り年収シミュレーターにも進めます。</p>
+        <p class="card__meta">目安の数値は、投資系YouTube 439本で使われていた基準値を集計して決めています。</p>
+        <a class="btn btn--primary" href="./stock-screener/">ツールを使う →</a>
       </article>
 
       <article class="card">
         <div class="card__badges">
-          <span class="badge">Webアプリ</span>
-          <span class="badge">退職願・退職届作成</span>
+          <span class="badge">退職の書類</span>
         </div>
         <h3 class="card__title">退職願・退職届 自動作成ツール</h3>
-        <p class="card__desc">氏名・会社名・退職希望日などを入力するだけで、正しい形式の退職願・退職届の文面を自動生成するWebアプリ。退職金シミュレーター・転職エージェント診断とも連携。</p>
-        <p class="card__meta">Vanilla HTML/CSS/JS・和暦変換にも対応</p>
-        <a class="btn btn--primary" href="./resignation-letter-generator/">アプリを見る →</a>
+        <p class="card__desc">氏名・会社名・退職希望日などを入力するだけで、正しい形式の退職願・退職届の文面を作成します。書き終えたら、退職金の手取りや転職先探しのツールにも進めます。</p>
+        <p class="card__meta">日付は和暦(令和)でも出力できます。</p>
+        <a class="btn btn--primary" href="./resignation-letter-generator/">ツールを使う →</a>
       </article>
 
       <article class="card">
         <div class="card__badges">
-          <span class="badge">Webアプリ</span>
-          <span class="badge">副業税金計算</span>
+          <span class="badge">副業の税金</span>
         </div>
         <h3 class="card__title">副業の税金シミュレーター</h3>
-        <p class="card__desc">本業の年収・副業の収入と経費を入力するだけで、副業によって増える税金の目安と確定申告の要否を計算するWebアプリ。副業ジャンル診断とも連携。</p>
-        <p class="card__meta">Vanilla HTML/CSS/JS・20万円ルールの判定にも対応</p>
-        <a class="btn btn--primary" href="./sidejob-tax-simulator/">アプリを見る →</a>
+        <p class="card__desc">本業の年収・副業の収入と経費を入力するだけで、副業によって増える税金の目安と、確定申告が必要かどうかを計算します。どんな副業が向いているかは副業ジャンル診断で探せます。</p>
+        <p class="card__meta">副業の所得が20万円以下かどうかの判定(いわゆる20万円ルール)にも対応しています。</p>
+        <a class="btn btn--primary" href="./sidejob-tax-simulator/">ツールを使う →</a>
       </article>
 
       <article class="card">
         <div class="card__badges">
-          <span class="badge">Webアプリ</span>
-          <span class="badge">退職金計算</span>
+          <span class="badge">退職金</span>
         </div>
         <h3 class="card__title">退職金手取りシミュレーター</h3>
-        <p class="card__desc">退職金の額面と勤続年数を入力するだけで、退職所得控除を踏まえた手取り額の目安を計算するWebアプリ。iDeCoの一時金を何歳で受け取ると税金が少ないかを比べる<a href="./retirement-simulator/ideco/">受け取り順シミュレーター</a>付き。</p>
-        <p class="card__meta">Vanilla HTML/CSS/JS・退職所得控除・分離課税・2026年からの10年ルールに対応</p>
-        <a class="btn btn--primary" href="./retirement-simulator/">アプリを見る →</a>
+        <p class="card__desc">退職金の額面と勤続年数を入力するだけで、退職所得控除を踏まえた手取り額の目安を計算します。iDeCoの一時金を何歳で受け取ると税金が少ないかを比べる<a href="./retirement-simulator/ideco/">受け取り順シミュレーター</a>もあります。</p>
+        <p class="card__meta">退職所得控除・分離課税と、2026年からの「10年ルール」に対応しています。</p>
+        <a class="btn btn--primary" href="./retirement-simulator/">ツールを使う →</a>
       </article>
 
       <article class="card">
         <div class="card__badges">
-          <span class="badge">Webアプリ</span>
           <span class="badge">ふるさと納税</span>
         </div>
         <h3 class="card__title">ふるさと納税シミュレーター</h3>
-        <p class="card__desc">額面年収・就業形態・扶養人数を入力するだけで、実質2,000円で寄附できるふるさと納税の控除上限額の目安を計算するWebアプリ。手取り年収シミュレーターとも連携。</p>
-        <p class="card__meta">Vanilla HTML/CSS/JS・一般的な目安表と照合済み</p>
-        <a class="btn btn--primary" href="./furusato-simulator/">アプリを見る →</a>
+        <p class="card__desc">額面年収・就業形態・扶養人数を入力するだけで、実質2,000円で寄附できるふるさと納税の控除上限額の目安を計算します。手取り年収シミュレーターにも進めます。</p>
+        <p class="card__meta">計算結果は、一般的な控除上限額の目安表と照合済みです。</p>
+        <a class="btn btn--primary" href="./furusato-simulator/">ツールを使う →</a>
       </article>
 
       <article class="card">
         <div class="card__badges">
-          <span class="badge">Webアプリ</span>
           <span class="badge">手取り計算</span>
         </div>
         <h3 class="card__title">手取り年収シミュレーター</h3>
-        <p class="card__desc">額面年収・就業形態・扶養人数を入力するだけで、社会保険料・所得税・住民税を差し引いた手取り額の目安を計算するWebアプリ。</p>
-        <p class="card__meta">Vanilla HTML/CSS/JS・会社員/自営業それぞれの概算計算に対応</p>
-        <a class="btn btn--primary" href="./takehome-calculator/">アプリを見る →</a>
+        <p class="card__desc">額面年収・就業形態・扶養人数を入力するだけで、社会保険料・所得税・住民税を差し引いた手取り額の目安を計算します。</p>
+        <p class="card__meta">会社員・自営業のどちらでも概算できます。</p>
+        <a class="btn btn--primary" href="./takehome-calculator/">ツールを使う →</a>
       </article>
 
       <article class="card">
         <div class="card__badges">
-          <span class="badge">Webアプリ</span>
           <span class="badge">保険診断</span>
         </div>
-        <h3 class="card__title">保険診断アプリ</h3>
-        <p class="card__desc">ライフステージ・気になる保障など5つの質問に答えるだけで、優先して考えたい保険カテゴリを診断するWebアプリ。給付金診断とも連携。</p>
-        <p class="card__meta">Vanilla HTML/CSS/JS・保険カテゴリ7件をタグベースでマッチング</p>
-        <a class="btn btn--primary" href="./insurance-checker/">アプリを見る →</a>
+        <h3 class="card__title">保険診断</h3>
+        <p class="card__desc">ライフステージ・気になる保障など5つの質問に答えるだけで、優先して考えたい保険の種類がわかります。公的な給付金を探す給付金診断にも進めます。</p>
+        <p class="card__meta">7つの保険カテゴリから、答えに合うものを順に表示します。</p>
+        <a class="btn btn--primary" href="./insurance-checker/">ツールを使う →</a>
       </article>
 
       <article class="card">
         <div class="card__badges">
-          <span class="badge">Webアプリ</span>
-          <span class="badge">転職診断</span>
+          <span class="badge">転職</span>
         </div>
-        <h3 class="card__title">転職エージェント診断アプリ</h3>
-        <p class="card__desc">今の働き方・転職の悩みなど5つの質問に答えるだけで、合いそうな転職エージェント・転職支援サービスを診断するWebアプリ。給付金診断・副業診断とも連携。</p>
-        <p class="card__meta">Vanilla HTML/CSS/JS・転職支援サービス11件をタグベースでマッチング</p>
-        <a class="btn btn--primary" href="./career-checker/">アプリを見る →</a>
+        <h3 class="card__title">転職エージェント診断</h3>
+        <p class="card__desc">今の働き方・転職の悩みなど5つの質問に答えるだけで、合いそうな転職エージェント・転職支援サービスがわかります。給付金診断・副業ジャンル診断にも進めます。</p>
+        <p class="card__meta">転職支援サービス11件から、答えに合うものを順に表示します。</p>
+        <a class="btn btn--primary" href="./career-checker/">ツールを使う →</a>
       </article>
 
       <article class="card">
         <div class="card__badges">
-          <span class="badge">Webアプリ</span>
-          <span class="badge">副業診断</span>
+          <span class="badge">副業</span>
         </div>
-        <h3 class="card__title">副業ジャンル診断アプリ</h3>
-        <p class="card__desc">使える時間・初期費用・得意なことなど5つの質問に答えるだけで、向いていそうな副業ジャンルを診断するWebアプリ。スキルアップ系ジャンルは給付金診断アプリとも連携。</p>
-        <p class="card__meta">Vanilla HTML/CSS/JS・副業ジャンル19種をタグベースでマッチング</p>
-        <a class="btn btn--primary" href="./sidejob-checker/">アプリを見る →</a>
+        <h3 class="card__title">副業ジャンル診断</h3>
+        <p class="card__desc">使える時間・初期費用・得意なことなど5つの質問に答えるだけで、向いていそうな副業ジャンルがわかります。スキルアップが必要な副業は、学費に使える給付金を給付金診断で探せます。</p>
+        <p class="card__meta">副業ジャンル19種から、答えに合うものを順に表示します。</p>
+        <a class="btn btn--primary" href="./sidejob-checker/">ツールを使う →</a>
       </article>
 
       <article class="card">
         <div class="card__badges">
-          <span class="badge">Webアプリ</span>
-          <span class="badge">給付金診断</span>
+          <span class="badge">給付金・補助金</span>
         </div>
-        <h3 class="card__title">給付金・補助金診断アプリ</h3>
-        <p class="card__desc">スキルアップ・副業を考えている方向けに、5つの質問に答えるだけで使えそうな公的支援制度(教育訓練給付金・求職者支援制度・自治体のリスキリング支援など)を診断するWebアプリ。国の制度に加えて全47都道府県の支援制度を収録。</p>
-        <p class="card__meta">Vanilla HTML/CSS/JS・国＋全47都道府県の公的支援142件を一次情報でキュレーション</p>
-        <a class="btn btn--primary" href="./subsidy-checker/">アプリを見る →</a>
-      </article>
-
-      <article class="card">
-        <div class="card__badges">
-          <span class="badge">準備中</span>
-        </div>
-        <h3 class="card__title">次のプロジェクト</h3>
-        <p class="card__desc">現在、新しいツール・アプリを開発中です。公開まで今しばらくお待ちください。</p>
-        <span class="btn btn--soon">近日公開</span>
-      </article>
-
-    </div>
-  </section>
-
-  <section class="section">
-    <h2 class="section__heading">Marketing / Media 運営実績</h2>
-    <div class="card-list">
-
-      <article class="card">
-        <div class="card__badges">
-          <span class="badge">アフィリエイトメディア</span>
-          <span class="badge">note・LP・X運用</span>
-        </div>
-        <h3 class="card__title">サロン専売品ラボ</h3>
-        <p class="card__desc">サロン専売品ヘアケア(ALBUM ONLINE STORE)のアフィリエイトメディアを企画・運営。商品選定からnote記事・LP制作・X運用までを一気通貫で担当し、複数商品のレビューコンテンツを継続的に公開。</p>
-        <a class="btn btn--outline" href="https://salonsenbai-lab.github.io/salon-senbai-lab/" target="_blank" rel="noopener">サイトを見る →</a>
+        <h3 class="card__title">給付金・補助金診断</h3>
+        <p class="card__desc">スキルアップや副業を考えている方向けに、5つの質問に答えるだけで、使えそうな公的支援制度(教育訓練給付金・求職者支援制度・自治体のリスキリング支援など)がわかります。国の制度に加えて、全47都道府県の支援制度を収録しています。</p>
+        <p class="card__meta">国と全47都道府県の公的支援142件を、各制度の公式情報をもとに収録しています。</p>
+        <a class="btn btn--primary" href="./subsidy-checker/">ツールを使う →</a>
       </article>
 
     </div>
