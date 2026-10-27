@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  旧ドメイン(hakoniwa-lab.github.io)のURLだけを並べたサイトマップ。sitemap.xml(インデックス)には入れない。
+  Search Console の旧プロパティ https://hakoniwa-lab.github.io/ に送信する専用。
+
+  なぜあるか: 2026-09-05 に hakoniwalab.com へ移行したが、Google はこの13件の旧URLを
+  移行前(8/23〜8/29)を最後に読み直しておらず、301を見ないまま旧URLを正規として持ち続けている
+  (新URLが「重複しています。Google により…異なるページが正規ページとして選択されました」になる)。
+  lastmod を移行日にして、旧URLの読み直しを促す。
+
+  消してよい時期: 新URLの「重複」がなくなったら(遅くとも2027年3月)。旧プロパティからも送信を削除する。
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://hakoniwa-lab.github.io/career-checker/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://hakoniwa-lab.github.io/career-checker/guide/seishain-natte-hoshii-kareshi/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://hakoniwa-lab.github.io/career-checker/guide/tenkin-tsuiteikitakunai/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://hakoniwa-lab.github.io/career-checker/guide/yakin-yametehoshii-danna/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://hakoniwa-lab.github.io/career-checker/guide/kareshi-tenshoku-kekkonmae/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://hakoniwa-lab.github.io/retirement-simulator/guide/taishokukin-tedori-keisan/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://hakoniwa-lab.github.io/retirement-simulator/guide/shinkokusho-dashiwasure/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://hakoniwa-lab.github.io/insurance-checker/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://hakoniwa-lab.github.io/insurance-checker/guide/danna-hoken-hairanai/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://hakoniwa-lab.github.io/stock-screener/guide/per-50bai-waridaka/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://hakoniwa-lab.github.io/sidejob-checker/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://hakoniwa-lab.github.io/takehome-calculator/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://hakoniwa-lab.github.io/subsidy-checker/</loc><lastmod>2026-09-05</lastmod></url>
+</urlset>
